@@ -301,6 +301,7 @@
                             Send Newsletter
                         </h1>
                     </div>
+                </div>
 
 
                 <div class="col-lg-8 col-md-12 col-sm-12">
