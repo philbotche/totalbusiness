@@ -11,11 +11,11 @@
 |
 */
 
-
-// Route::get('/', 'FrontController@index');
-
-
+// Home page Controller
+Route::get('/', 'FrontController@index');
 
 
-// Home page Controlle 
-Route::get('/','IndexController@index');
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
