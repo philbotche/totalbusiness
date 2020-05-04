@@ -10,6 +10,6 @@ class FrontController extends Controller
     //Home page
     public function index()
     {
-        return view('layout');
+        return view('index');
     }
 }
