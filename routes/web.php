@@ -11,7 +11,6 @@
 |
 */
 
-
 // Home page Controller
 Route::get('/', 'FrontController@index');
 
@@ -19,3 +18,4 @@ Route::get('/', 'FrontController@index');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
