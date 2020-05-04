@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="fr">
 
 
 <!-- Mirrored from demo.hasthemes.com/greenfarm-preview/greenfarm/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Apr 2020 10:30:21 GMT -->
@@ -34,7 +34,7 @@
 
     <!-- Modernizer JS -->
     <script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>
-
+    
 </head>
 
 <body>
@@ -281,6 +281,10 @@
 
 <!--=====  End of Header  ======-->
 
+    <!---===== ENTÊTE CONTENT ========-->
+
+        @yield('content')
+    <!---===== FIN ENTÊTE CONTENT ========-->
 
 <!--=============================================
 =            Footer         =
@@ -289,10 +293,10 @@
 <footer>
     <!--=======  newsletter section  =======-->
 
-    <div class="newsletter-section pt-50 pb-50">
+    {{-- <div class="newsletter-section pt-50 pb-50">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12 mb-sm-20 mb-xs-20">
+            <div class="row"> --}}
+                {{-- <div class="col-lg-4 col-md-12 col-sm-12 mb-sm-20 mb-xs-20">
                     <!--=======  newsletter title =======-->
 
                     <div class="newsletter-title">
@@ -301,10 +305,10 @@
                             Send Newsletter
                         </h1>
                     </div>
-                </div>
+                </div> --}}
 
 
-                <div class="col-lg-8 col-md-12 col-sm-12">
+                {{-- <div class="col-lg-8 col-md-12 col-sm-12">
                     <!--=======  subscription-form wrapper  =======-->
 
                     <div class="subscription-form-wrapper d-flex flex-wrap flex-sm-nowrap">
@@ -325,10 +329,10 @@
                     </div>
 
                     <!--=======  End of subscription-form wrapper  =======-->
-                </div>
-            </div>
-        </div>
-    </div>
+                </div> --}}
+            {{-- </div>
+        </div> --}}
+    {{-- </div> --}}
 
     <!--=======  End of newsletter section  =======-->
 
@@ -668,6 +672,7 @@
 
 </body>
 
+@yield('extra-js')
 
 <!-- Mirrored from demo.hasthemes.com/greenfarm-preview/greenfarm/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Apr 2020 10:32:45 GMT -->
 </html>
