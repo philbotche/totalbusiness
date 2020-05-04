@@ -12,5 +12,10 @@
 */
 
 
-// Home page Controller
-Route::get('/', 'FrontController@index');
+// Route::get('/', 'FrontController@index');
+
+
+
+
+// Home page Controlle 
+Route::get('/','IndexController@index');
