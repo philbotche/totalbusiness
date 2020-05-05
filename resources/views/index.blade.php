@@ -1792,7 +1792,7 @@
 										<div class="col-lg-4 pl-0 pr-0">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="{{asset('/images/products/product11.jpg')}}" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product11.jpg')}}" class="img-fluid" alt="">
 												</a>
 											</div>
 										</div>

@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 class FrontController extends Controller
 {
     //Home page
-    public function index()
-    {
-        return view('layout');
+    public function index(){
+
+
+        return view('index');
     }
 }
