@@ -282,7 +282,7 @@
 <!--=====  End of Header  ======-->
 
     <!---===== ENTÊTE CONTENT ========-->
-
+    
         @yield('content')
     <!---===== FIN ENTÊTE CONTENT ========-->
 

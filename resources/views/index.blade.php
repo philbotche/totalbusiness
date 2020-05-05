@@ -794,7 +794,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product07.jpg" class="img-fluid" alt="">
+													<img src="{{asset('/images/products/product07.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -824,7 +824,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product08.jpg" class="img-fluid" alt="">
+													<img src="{{asset('/images/products/product08.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -859,7 +859,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product09.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product09.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a class="active" href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -889,7 +889,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product10.jpg" class="img-fluid" alt="">
+													<img src="{{asset('/images/products/product10.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -933,7 +933,7 @@
 												<div class="image">
 													<a href="single-product.html">
 														<span class="onsale">Sale!</span>
-														<img src="assets/images/products/product09.jpg" class="img-fluid" alt="">
+														<img src="{{asset('images/products/product09.jpg')}}" class="img-fluid" alt="">
 													</a>
 													<div class="product-hover-icons">
 														<a class="active" href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -963,7 +963,7 @@
 												<div class="image">
 													<a href="single-product.html">
 														<span class="onsale">Sale!</span>
-														<img src="assets/images/products/product10.jpg" class="img-fluid" alt="">
+														<img src="{{asset('images/products/product10.jpg')}}" class="img-fluid" alt="">
 													</a>
 													<div class="product-hover-icons">
 														<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -998,7 +998,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product01.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a class="active" href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -1027,7 +1027,7 @@
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product02.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product02.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -1060,7 +1060,7 @@
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product03.jpg" class="img-fluid" alt="">
+													<img src="{{asset('/images/products/product03.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -1089,7 +1089,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product04.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product04.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -1124,7 +1124,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product05.jpg" class="img-fluid" alt="">
+													<img src="{{asset('/images/products/product05.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -1153,7 +1153,7 @@
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product06.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product06.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a class="active" href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -1186,7 +1186,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product07.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product07.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -1216,7 +1216,7 @@
 											<div class="image">
 												<a href="single-product.html">
 													<span class="onsale">Sale!</span>
-													<img src="assets/images/products/product08.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product08.jpg')}}" class="img-fluid" alt="">
 												</a>
 												<div class="product-hover-icons">
 													<a href="#" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -1271,7 +1271,7 @@
 								
 								<div class="single-featured-product">
 									<a href="single-product.html">
-										<img src="assets/images/product-banners/fullbanner-1.jpg" class="img-fluid" alt="">
+										<img src="{{asset('images/product-banners/fullbanner-1.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								
@@ -1282,7 +1282,7 @@
 								
 								<div class="single-featured-product">
 									<a href="single-product.html">
-										<img src="assets/images/product-banners/fullbanner-2.jpg" class="img-fluid" alt="">
+										<img src="{{asset('images/product-banners/fullbanner-2.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								
@@ -1293,7 +1293,7 @@
 								
 								<div class="single-featured-product">
 									<a href="single-product.html">
-										<img src="assets/images/product-banners/fullbanner-3.jpg" class="img-fluid" alt="">
+										<img src="{{asset('/images/product-banners/fullbanner-3.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								
@@ -1304,7 +1304,7 @@
 								
 								<div class="single-featured-product">
 									<a href="single-product.html">
-										<img src="assets/images/product-banners/fullbanner-4.jpg" class="img-fluid" alt="">
+										<img src="{{asset('images/product-banners/fullbanner-4.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								
@@ -1315,7 +1315,7 @@
 								
 								<div class="single-featured-product">
 									<a href="single-product.html">
-										<img src="assets/images/product-banners/fullbanner-5.jpg" class="img-fluid" alt="">
+										<img src="{{asset('images/product-banners/fullbanner-5.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								
@@ -1326,7 +1326,7 @@
 								
 								<div class="single-featured-product">
 									<a href="single-product.html">
-										<img src="assets/images/product-banners/fullbanner-6.jpg" class="img-fluid" alt="">
+										<img src="{{asset('images/product-banners/fullbanner-6.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								
@@ -1373,7 +1373,7 @@
 									<div class="image text-md-center">
 										<a href="single-product.html">
 											<span class="onsale">Sale!</span>
-											<img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+											<img src="{{asset('/images/products/product01.jpg')}}" class="img-fluid" alt="">
 										</a>
 										<div class="product-hover-icons">
 											<a href="#" data-tooltip="Quick view" data-toggle = "modal" data-target="#quick-view-modal-container"> <span class="icon_search"></span> </a>
@@ -1411,7 +1411,7 @@
 									<div class="image">
 										<a href="single-product.html">
 											<span class="onsale">Sale!</span>
-											<img src="assets/images/products/product02.jpg" class="img-fluid" alt="">
+											<img src="{{asset('images/products/product02.jpg')}}" class="img-fluid" alt="">
 										</a>
 										<div class="product-hover-icons">
 											<a href="#" data-tooltip="Quick view" data-toggle = "modal" data-target="#quick-view-modal-container"> <span class="icon_search"></span> </a>
@@ -1449,7 +1449,7 @@
 									<div class="image">
 										<a href="single-product.html">
 											<span class="onsale">Sale!</span>
-											<img src="assets/images/products/product03.jpg" class="img-fluid" alt="">
+											<img src="{{asset('/images/products/product03.jpg')}}" class="img-fluid" alt="">
 										</a>
 										<div class="product-hover-icons">
 											<a href="#" data-tooltip="Quick view" data-toggle = "modal" data-target="#quick-view-modal-container"> <span class="icon_search"></span> </a>
@@ -1517,7 +1517,7 @@
 										<div class="col-lg-4 pl-0 pr-0">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+													<img src="{{asset('/images/products/product01.jpg')}}" class="img-fluid" alt="">
 												</a>
 											</div>
 										</div>
@@ -1541,7 +1541,7 @@
 											<div class="col-lg-4 pl-0 pr-0">
 												<div class="image">
 													<a href="single-product.html">
-														<img src="assets/images/products/product02.jpg" class="img-fluid" alt="">
+														<img src="{{asset('/images/products/product02.jpg')}}" class="img-fluid" alt="">
 													</a>
 												</div>
 											</div>
@@ -1572,7 +1572,7 @@
 										<div class="col-lg-4 pl-0 pr-0">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product03.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product03.jpg')}}" class="img-fluid" alt="">
 												</a>
 											</div>
 										</div>
@@ -1596,7 +1596,7 @@
 											<div class="col-lg-4 pl-0 pr-0">
 												<div class="image">
 													<a href="single-product.html">
-														<img src="assets/images/products/product04.jpg" class="img-fluid" alt="">
+														<img src="{{asset('images/products/product04.jpg')}}" class="img-fluid" alt="">
 													</a>
 												</div>
 											</div>
@@ -1627,7 +1627,7 @@
 										<div class="col-lg-4 pl-0 pr-0">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product05.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product05.jpg')}}" class="img-fluid" alt="">
 												</a>
 											</div>
 										</div>
@@ -1651,7 +1651,7 @@
 											<div class="col-lg-4 pl-0 pr-0">
 												<div class="image">
 													<a href="single-product.html">
-														<img src="assets/images/products/product06.jpg" class="img-fluid" alt="">
+														<img src="{{asset('/images/products/product06.jpg')}}" class="img-fluid" alt="">
 													</a>
 												</div>
 											</div>
@@ -1682,7 +1682,7 @@
 										<div class="col-lg-4 pl-0 pr-0">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product07.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product07.jpg')}}" class="img-fluid" alt="">
 												</a>
 											</div>
 										</div>
@@ -1706,7 +1706,7 @@
 											<div class="col-lg-4 pl-0 pr-0">
 												<div class="image">
 													<a href="single-product.html">
-														<img src="assets/images/products/product08.jpg" class="img-fluid" alt="">
+														<img src="{{asset('/images/products/product08.jpg')}}" class="img-fluid" alt="">
 													</a>
 												</div>
 											</div>
@@ -1737,7 +1737,7 @@
 										<div class="col-lg-4 pl-0 pr-0">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product09.jpg" class="img-fluid" alt="">
+													<img src="{{asset('images/products/product09.jpg')}}" class="img-fluid" alt="">
 												</a>
 											</div>
 										</div>
@@ -1761,7 +1761,7 @@
 											<div class="col-lg-4 pl-0 pr-0">
 												<div class="image">
 													<a href="single-product.html">
-														<img src="assets/images/products/product10.jpg" class="img-fluid" alt="">
+														<img src="{{asset('/images/products/product10.jpg')}}" class="img-fluid" alt="">
 													</a>
 												</div>
 											</div>
@@ -1792,7 +1792,7 @@
 										<div class="col-lg-4 pl-0 pr-0">
 											<div class="image">
 												<a href="single-product.html">
-													<img src="assets/images/products/product11.jpg" class="img-fluid" alt="">
+													<img src="{{asset('/images/products/product11.jpg')}}" class="img-fluid" alt="">
 												</a>
 											</div>
 										</div>
@@ -1816,7 +1816,7 @@
 											<div class="col-lg-4 pl-0 pr-0">
 												<div class="image">
 													<a href="single-product.html">
-														<img src="assets/images/products/product12.jpg" class="img-fluid" alt="">
+														<img src="{{asset('/images/products/product12.jpg')}}" class="img-fluid" alt="">
 													</a>
 												</div>
 											</div>
@@ -1878,7 +1878,7 @@
 								<div class="single-post-wrapper">
 									<div class="post-thumb">
 										<a href="blog-post-image-format.html">
-											<img src="assets/images/blog-image/blog01.jpg" class="img-fluid" alt="">
+											<img src="{{asset('/images/blog-image/blog01.jpg')}}" class="img-fluid" alt="">
 										</a>
 									</div>
 									<div class="post-info">
@@ -1898,7 +1898,7 @@
 								<div class="single-post-wrapper">
 									<div class="post-thumb">
 										<a href="blog-post-image-gallery.html">
-											<img src="assets/images/blog-image/blog02.jpg" class="img-fluid" alt="">
+											<img src="{{asset('/images/blog-image/blog02.jpg')}}" class="img-fluid" alt="">
 										</a>
 									</div>
 									<div class="post-info">
@@ -1918,7 +1918,7 @@
 								<div class="single-post-wrapper">
 									<div class="post-thumb">
 										<a href="blog-post-audio-format.html">
-											<img src="assets/images/blog-image/blog03.jpg" class="img-fluid" alt="">
+											<img src="{{asset('/images/blog-image/blog03.jpg')}}" class="img-fluid" alt="">
 										</a>
 									</div>
 									<div class="post-info">
@@ -1938,7 +1938,7 @@
 								<div class="single-post-wrapper">
 									<div class="post-thumb">
 										<a href="blog-post-video-format.html">
-											<img src="assets/images/blog-image/blog04.jpg" class="img-fluid" alt="">
+											<img src="{{asset('/images/blog-image/blog04.jpg')}}" class="img-fluid" alt="">
 										</a>
 									</div>
 									<div class="post-info">
