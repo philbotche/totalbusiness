@@ -2,6 +2,19 @@
 
 @section( 'content')
 
+
+    @php
+    foreach ($products as $product)
+    {
+       echo "produit: \"$product->name\"";
+        $catalog = \App\Product::find($product->id);
+        foreach ($catalog->catalog as $cat)
+            {
+                echo "a pour categorie: $cat->name <br>";
+            }
+    }
+		die;
+    @endphp
 <!--=============================================
 	=            Hero slider Area         =
 	=============================================-->

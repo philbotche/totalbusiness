@@ -22,8 +22,12 @@ class FrontController extends Controller
     }
 
     // Page of the Categories
-    public function category(Request $slug)
+    public function category($slug)
     {
+        $category = Catalog::where('slug', $slug)->first();
 
+       $product_cat = $category->products;
+
+       return view('category', ['product_cat'=>$product_cat]);
     }
 }
