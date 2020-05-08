@@ -1,16 +1,30 @@
 @extends('layout.layout')
 
 @section( 'content')
+
+
+    @php
+    foreach ($products as $product)
+    {
+       echo "produit: \"$product->name\"";
+        $catalog = \App\Product::find($product->id);
+        foreach ($catalog->catalog as $cat)
+            {
+                echo "a pour categorie: $cat->name <br>";
+            }
+    }
+		die;
+    @endphp
 <!--=============================================
 	=            Hero slider Area         =
 	=============================================-->
-	
+
 	<div class="hero-slider-container mb-35">
 		<!--=======  Slider area  =======-->
-		
+
 		<div class="hero-slider-one">
 			<!--=======  hero slider item  =======-->
-				
+
 			<div class="hero-slider-item slider-bg-1">
 					<div class="slider-content d-flex flex-column justify-content-center align-items-center">
 						<h1>Organic Farm</h1>
@@ -18,12 +32,12 @@
 						<a href="shop-left-sidebar.html" class="slider-btn">SHOP NOW</a>
 					</div>
 				</div>
-			
+
 			<!--=======  End of hero slider item  =======-->
 
 
 			<!--=======  Hero slider item  =======-->
-			
+
 			<div class="hero-slider-item slider-bg-2">
 				<div class="slider-content d-flex flex-column justify-content-center align-items-center">
 					<h1>Fresh & Nature</h1>
@@ -31,15 +45,15 @@
 					<a href="shop-left-sidebar.html" class="slider-btn">SHOP NOW</a>
 				</div>
 			</div>
-			
+
 			<!--=======  End of Hero slider item  =======-->
-			
+
 		</div>
-		
+
 		<!--=======  End of Slider area  =======-->
 
 	</div>
-	
+
 	<!--=====  End of Hero slider Area  ======-->
 
 
@@ -47,40 +61,40 @@
 	<!--=============================================
 	=            Policy area         =
 	=============================================-->
-	
+
 	<div class="policy-section mb-35">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="policy-titles d-flex align-items-center flex-wrap">
 						<!--=======  single policy  =======-->
-						
+
 						<div class="single-policy">
 							<span><img src="{{asset('images/policy-icon1.png')}}" class="img-fluid" alt=""></span>
 							<p> FREE SHIPPING ON ORDERS OVER $200</p>
 						</div>
-						
+
 						<!--=======  End of single policy  =======-->
 
 
 						<!--=======  single policy  =======-->
-						
+
 						<div class="single-policy">
 							<span><img src="{{asset('images/policy-icon2.png')}}" class="img-fluid" alt=""></span>
 							<p>30 -DAY RETURNS MONEY BACK</p>
 						</div>
-						
+
 						<!--=======  End of single policy  =======-->
-						
+
 						<!--=============================================
 						=            single policy         =
 						=============================================-->
-						
+
 						<div class="single-policy">
 							<span><img src="{{asset('images/policy-icon3.png')}}" class="img-fluid" alt=""></span>
 							<p> 24/7 SUPPORT</p>
 						</div>
-						
+
 						<!--=====  End of single policy  ======-->
 
 					</div>
@@ -88,35 +102,35 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!--=====  End of Policy area  ======-->
 
 	<!--=============================================
 	=            category slider         =
 	=============================================-->
-	
+
 	<div class="slider category-slider mb-35">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<!--=======  category slider section title  =======-->
-					
+
 					<div class="section-title">
 						<h3>top categories</h3>
 					</div>
-					
+
 					<!--=======  End of category slider section title  =======-->
-					
+
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
 					<!--=======  category container  =======-->
-					
+
 					<div class="category-slider-container">
 
 						<!--=======  single category  =======-->
-						
+
 						<div class="single-category">
 							<div class="category-image">
 								<a href="shop-left-sidebar.html" title="Vegetables">
@@ -129,11 +143,11 @@
 								</h3>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single category  =======-->
 
 						<!--=======  single category  =======-->
-						
+
 						<div class="single-category">
 							<div class="category-image">
 								<a href="shop-left-sidebar.html" title="Fast Food">
@@ -146,9 +160,9 @@
 								</h3>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single category  =======-->
-					
+
 						<!--=======  single category  =======-->
 
 						<div class="single-category">
@@ -162,12 +176,12 @@
 									<a href="shop-left-sidebar.html"> Fish & Meats</a>
 								</h3>
 							</div>
-						</div>						
-						
+						</div>
+
 						<!--=======  End of single category  =======-->
-					
+
 						<!--=======  single category  =======-->
-						
+
 						<div class="single-category">
 							<div class="category-image">
 								<a href="shop-left-sidebar.html" title="Fruits">
@@ -180,11 +194,11 @@
 								</h3>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single category  =======-->
-					
+
 						<!--=======  single category  =======-->
-						
+
 						<div class="single-category">
 							<div class="category-image">
 								<a href="shop-left-sidebar.html" title="Salads">
@@ -197,12 +211,12 @@
 								</h3>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single category  =======-->
-					
+
 						<!--=======  single category  =======-->
-						
-						
+
+
 						<div class="single-category">
 							<div class="category-image">
 								<a href="shop-left-sidebar.html" title="Bread">
@@ -215,11 +229,11 @@
 								</h3>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single category  =======-->
-					
+
 						<!--=======  single category  =======-->
-						
+
 						<div class="single-category">
 							<div class="category-image">
 								<a href="shop-left-sidebar.html" title="Beans">
@@ -232,24 +246,24 @@
 								</h3>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single category  =======-->
-						
+
 					</div>
-					
+
 					<!--=======  End of category container  =======-->
 
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<!--=====  End of category slider  ======-->
 
 	<!--=============================================
 	=            Tab slider         =
 	=============================================-->
-	
+
 	<div class="slider tab-slider mb-35">
 		<div class="container">
 			<div class="row">
@@ -268,12 +282,12 @@
 						<div class="tab-content" id="nav-tabContent">
 							<div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
 								<!--=======  tab slider container  =======-->
-								
+
 								<div class="tab-slider-container">
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -298,13 +312,13 @@
 													<span class="discounted-price">$80.00</span>
 												</div>
 											</div>
-											
+
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -328,16 +342,16 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
-										
-							
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -361,11 +375,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -391,16 +405,16 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
-										
-							
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -426,11 +440,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -454,7 +468,7 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 									</div>
 									<!--=======  End of single tab slider product  =======-->
@@ -462,7 +476,7 @@
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -488,11 +502,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -518,7 +532,7 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 									</div>
 									<!--=======  End of single tab slider product  =======-->
@@ -527,7 +541,7 @@
 
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -553,11 +567,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -583,24 +597,24 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
-										
-							
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 								</div>
-									
+
 								<!--=======  End of tab slider container  =======-->
 								</div>
 							<div class="tab-pane fade" id="new-arrivals" role="tabpanel" aria-labelledby="new-arrival-tab">
 								<!--=======  tab slider container  =======-->
-																
+
 								<div class="tab-slider-container">
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 											<!--=======  tab slider sub product  =======-->
-											
+
 											<div class="gf-product tab-slider-sub-product">
 												<div class="image">
 													<a href="single-product.html">
@@ -624,11 +638,11 @@
 													</div>
 												</div>
 											</div>
-										
+
 											<!--=======  End of tab slider sub product  =======-->
-	
+
 											<!--=======  tab slider sub product  =======-->
-											
+
 											<div class="gf-product tab-slider-sub-product">
 												<div class="image">
 													<a href="single-product.html">
@@ -654,16 +668,16 @@
 													</div>
 												</div>
 											</div>
-										
+
 											<!--=======  End of tab slider sub product  =======-->
-											
-								
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -689,11 +703,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -717,17 +731,17 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
-										
-							
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -753,11 +767,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -781,7 +795,7 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 									</div>
 									<!--=======  End of single tab slider product  =======-->
@@ -789,7 +803,7 @@
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -815,11 +829,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -845,7 +859,7 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 									</div>
 									<!--=======  End of single tab slider product  =======-->
@@ -854,7 +868,7 @@
 
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -880,11 +894,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -910,25 +924,25 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
-										
-							
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 								</div>
-										
+
 								<!--=======  End of tab slider container  =======-->
 							</div>
 							<div class="tab-pane fade" id="on-sale" role="tabpanel" aria-labelledby="nav-onsale-tab">
 								<!--=======  tab slider container  =======-->
-																
+
 								<div class="tab-slider-container">
 									<!--=======  single tab slider item  =======-->
 
 									<div class="single-tab-slider-item">
 											<!--=======  tab slider sub product  =======-->
-											
+
 											<div class="gf-product tab-slider-sub-product">
 												<div class="image">
 													<a href="single-product.html">
@@ -954,11 +968,11 @@
 													</div>
 												</div>
 											</div>
-										
+
 											<!--=======  End of tab slider sub product  =======-->
-	
+
 											<!--=======  tab slider sub product  =======-->
-											
+
 											<div class="gf-product tab-slider-sub-product">
 												<div class="image">
 													<a href="single-product.html">
@@ -984,16 +998,16 @@
 													</div>
 												</div>
 											</div>
-										
+
 											<!--=======  End of tab slider sub product  =======-->
-											
-								
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -1019,11 +1033,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -1047,16 +1061,16 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
-										
-							
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -1080,11 +1094,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -1110,16 +1124,16 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
-										
-							
+
+
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -1145,11 +1159,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -1173,7 +1187,7 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 									</div>
 									<!--=======  End of single tab slider product  =======-->
@@ -1181,7 +1195,7 @@
 									<!--=======  single tab slider item  =======-->
 									<div class="single-tab-slider-item">
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -1207,11 +1221,11 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 
 										<!--=======  tab slider sub product  =======-->
-										
+
 										<div class="gf-product tab-slider-sub-product">
 											<div class="image">
 												<a href="single-product.html">
@@ -1237,12 +1251,12 @@
 												</div>
 											</div>
 										</div>
-									
+
 										<!--=======  End of tab slider sub product  =======-->
 									</div>
 									<!--=======  End of single tab slider product  =======-->
 								</div>
-										
+
 								<!--=======  End of tab slider container  =======-->
 							</div>
 						</div>
@@ -1252,13 +1266,13 @@
 		</div>
 	</div>
 
-	
+
 	<!--=====  End of Tab slider  ======-->
 
 	<!--=============================================
 	=            Featured product image gallery         =
 	=============================================-->
-	
+
 	<div class="featured-product-image-gallery mb-80 pt-120 section-bg">
 		<div class="container">
 			<div class="row">
@@ -1268,86 +1282,86 @@
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-sm-6">
 								<!--=======  single featured product  =======-->
-								
+
 								<div class="single-featured-product">
 									<a href="single-product.html">
 										<img src="assets/images/product-banners/fullbanner-1.jpg" class="img-fluid" alt="">
 									</a>
 								</div>
-								
+
 								<!--=======  End of single featured product  =======-->
 							</div>
 							<div class="col-lg-4 col-sm-6">
 								<!--=======  single featured product  =======-->
-								
+
 								<div class="single-featured-product">
 									<a href="single-product.html">
 										<img src="assets/images/product-banners/fullbanner-2.jpg" class="img-fluid" alt="">
 									</a>
 								</div>
-								
+
 								<!--=======  End of single featured product  =======-->
 							</div>
 							<div class="col-lg-4 col-sm-6">
 								<!--=======  single featured product  =======-->
-								
+
 								<div class="single-featured-product">
 									<a href="single-product.html">
 										<img src="assets/images/product-banners/fullbanner-3.jpg" class="img-fluid" alt="">
 									</a>
 								</div>
-								
+
 								<!--=======  End of single featured product  =======-->
 							</div>
 							<div class="col-lg-4 col-sm-6">
 								<!--=======  single featured product  =======-->
-								
+
 								<div class="single-featured-product">
 									<a href="single-product.html">
 										<img src="assets/images/product-banners/fullbanner-4.jpg" class="img-fluid" alt="">
 									</a>
 								</div>
-								
+
 								<!--=======  End of single featured product  =======-->
 							</div>
 							<div class="col-lg-4 col-sm-6">
 								<!--=======  single featured product  =======-->
-								
+
 								<div class="single-featured-product">
 									<a href="single-product.html">
 										<img src="assets/images/product-banners/fullbanner-5.jpg" class="img-fluid" alt="">
 									</a>
 								</div>
-								
+
 								<!--=======  End of single featured product  =======-->
 							</div>
 							<div class="col-lg-4 col-sm-6">
 								<!--=======  single featured product  =======-->
-								
+
 								<div class="single-featured-product">
 									<a href="single-product.html">
 										<img src="assets/images/product-banners/fullbanner-6.jpg" class="img-fluid" alt="">
 									</a>
 								</div>
-								
+
 								<!--=======  End of single featured product  =======-->
 							</div>
 						</div>
 					</div>
-					
+
 					<!--=======  End of gallery product container  =======-->
 
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<!--=====  End of Featured product image gallery  ======-->
 
 	<!--=============================================
 	=            Sale product slider         =
 	=============================================-->
-	
+
 	<div class="sale-single-product-section mb-35">
 		<div class="container">
 			<div class="row">
@@ -1360,16 +1374,16 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<!--=======  sale single product container  =======-->
-					
+
 					<div class="sale-single-product-container">
 						<!--=======  sale single product  =======-->
-						
+
 						<div class="sale-single-product">
 							<div class="product-countdown" data-countdown="2020/05/01"></div>
 							<div class="row">
 								<div class="col-lg-4 offset-lg-2 col-md-12">
 									<!--=======  sale single product image  =======-->
-									
+
 									<div class="image text-md-center">
 										<a href="single-product.html">
 											<span class="onsale">Sale!</span>
@@ -1379,12 +1393,12 @@
 											<a href="#" data-tooltip="Quick view" data-toggle = "modal" data-target="#quick-view-modal-container"> <span class="icon_search"></span> </a>
 										</div>
 									</div>
-									
+
 									<!--=======  End of sale single product image  =======-->
 								</div>
 								<div class="col-lg-6 col-md-12">
 									<!--=======  sale single product content  =======-->
-									
+
 									<div class="sale-single-product-content text-center">
 										<h2 class="product-title"><a href="single-product.html">Dolorum fuga eget posuere</a></h2>
 										<h2 class="price"> <span class="main-price">$15.09</span> <span class="discounted-price">$12.00</span></h2>
@@ -1393,21 +1407,21 @@
 										</p>
 										<a href="#" class="single-sale-add-to-cart-btn">add to cart</a>
 									</div>
-									
+
 									<!--=======  End of sale single product content  =======-->
 								</div>
 							</div>
 						</div>
-						
+
 						<!--=======  End of sale single product  =======-->
 						<!--=======  sale single product  =======-->
-						
+
 						<div class="sale-single-product">
 							<div class="product-countdown" data-countdown="2020/05/01"></div>
 							<div class="row">
 								<div class="col-lg-4 offset-lg-2">
 									<!--=======  sale single product image  =======-->
-									
+
 									<div class="image">
 										<a href="single-product.html">
 											<span class="onsale">Sale!</span>
@@ -1417,12 +1431,12 @@
 											<a href="#" data-tooltip="Quick view" data-toggle = "modal" data-target="#quick-view-modal-container"> <span class="icon_search"></span> </a>
 										</div>
 									</div>
-									
+
 									<!--=======  End of sale single product image  =======-->
 								</div>
 								<div class="col-lg-6">
 									<!--=======  sale single product content  =======-->
-									
+
 									<div class="sale-single-product-content text-center">
 										<h2 class="product-title"><a href="single-product.html">Dolorum fuga eget posuere</a></h2>
 										<h2 class="price"> <span class="main-price">$15.09</span> <span class="discounted-price">$12.00</span></h2>
@@ -1431,21 +1445,21 @@
 										</p>
 										<a href="#" class="single-sale-add-to-cart-btn">add to cart</a>
 									</div>
-									
+
 									<!--=======  End of sale single product content  =======-->
 								</div>
 							</div>
 						</div>
-						
+
 						<!--=======  End of sale single product  =======-->
 						<!--=======  sale single product  =======-->
-						
+
 						<div class="sale-single-product">
 							<div class="product-countdown" data-countdown="2020/05/01"></div>
 							<div class="row">
 								<div class="col-lg-4 offset-lg-2">
 									<!--=======  sale single product image  =======-->
-									
+
 									<div class="image">
 										<a href="single-product.html">
 											<span class="onsale">Sale!</span>
@@ -1455,12 +1469,12 @@
 											<a href="#" data-tooltip="Quick view" data-toggle = "modal" data-target="#quick-view-modal-container"> <span class="icon_search"></span> </a>
 										</div>
 									</div>
-									
+
 									<!--=======  End of sale single product image  =======-->
 								</div>
 								<div class="col-lg-6">
 									<!--=======  sale single product content  =======-->
-									
+
 									<div class="sale-single-product-content text-center">
 										<h2 class="product-title"><a href="single-product.html">Dolorum fuga eget posuere</a></h2>
 										<h2 class="price"> <span class="main-price">$15.09</span> <span class="discounted-price">$12.00</span></h2>
@@ -1469,27 +1483,27 @@
 										</p>
 										<a href="#" class="single-sale-add-to-cart-btn">add to cart</a>
 									</div>
-									
+
 									<!--=======  End of sale single product content  =======-->
 								</div>
 							</div>
 						</div>
-						
+
 						<!--=======  End of sale single product  =======-->
 					</div>
-					
+
 					<!--=======  End of sale single product container  =======-->
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<!--=====  End of Sale product slider  ======-->
 
 	<!--=============================================
 	=            Best seller slider         =
 	=============================================-->
-	
+
 	<div class="slider best-seller-slider mb-35">
 		<div class="container">
 			<div class="row">
@@ -1499,14 +1513,14 @@
 					<div class="section-title">
 						<h3>best seller</h3>
 					</div>
-					
+
 					<!--=======  End of category slider section title  =======-->
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
 					<!--=======  best seller slider container  =======-->
-					
+
 					<div class="best-seller-slider-container pt-15 pb-15">
 
 						<!--=======  single best seller product  =======-->
@@ -1840,29 +1854,29 @@
 						<!--=======  End of single best seller product  =======-->
 
 					</div>
-					
+
 					<!--=======  End of best seller slider container  =======-->
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<!--=====  End of Best seller slider  ======-->
 
 	<!--=============================================
 	=            Blog post slider container         =
 	=============================================-->
-	
+
 	<div class="slider blog-slider mb-35">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<!--=======  blog slider section title  =======-->
-					
+
 					<div class="section-title">
 						<h3>greenfarm news</h3>
 					</div>
-					
+
 					<!--=======  End of blog slider section title  =======-->
 				</div>
 			</div>
@@ -1870,7 +1884,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<!--=======  blog slide container  =======-->
-					
+
 					<div class="blog-slider-container pt-30 pb-30 pr-30 pl-30">
 
 							<!--=======  single blog post  =======-->
@@ -1890,7 +1904,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<!--=======  End of single blog post  =======-->
 
 							<!--=======  single blog post  =======-->
@@ -1910,7 +1924,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<!--=======  End of single blog post  =======-->
 
 							<!--=======  single blog post  =======-->
@@ -1930,7 +1944,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<!--=======  End of single blog post  =======-->
 
 							<!--=======  single blog post  =======-->
@@ -1950,34 +1964,34 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<!--=======  End of single blog post  =======-->
 
 					</div>
-					
+
 					<!--=======  End of blog slide container  =======-->
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<!--=====  End of Blog post slider  ======-->
 
 
 	<!--=============================================
 	=            Brand logo slider         =
 	=============================================-->
-	
+
 	<div class="slider brand-logo-slider mb-35">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<!--=======  blog slider section title  =======-->
-					
+
 					<div class="section-title">
 						<h3>brand logos</h3>
 					</div>
-					
+
 					<!--=======  End of blog slider section title  =======-->
 				</div>
 			</div>
@@ -1985,7 +1999,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<!--=======  brand logo wrapper  =======-->
-					
+
 					<div class="brand-logo-wrapper pt-20 pb-20">
 
 						<!--=======  single-brand-logo  =======-->
@@ -1997,7 +2011,7 @@
 								</a>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single-brand-logo  =======-->
 						<!--=======  single-brand-logo  =======-->
 
@@ -2008,7 +2022,7 @@
 								</a>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single-brand-logo  =======-->
 						<!--=======  single-brand-logo  =======-->
 
@@ -2019,7 +2033,7 @@
 								</a>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single-brand-logo  =======-->
 						<!--=======  single-brand-logo  =======-->
 
@@ -2030,7 +2044,7 @@
 								</a>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single-brand-logo  =======-->
 						<!--=======  single-brand-logo  =======-->
 
@@ -2041,7 +2055,7 @@
 								</a>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single-brand-logo  =======-->
 						<!--=======  single-brand-logo  =======-->
 
@@ -2052,14 +2066,14 @@
 								</a>
 							</div>
 						</div>
-						
+
 						<!--=======  End of single-brand-logo  =======-->
 					</div>
-					
+
 					<!--=======  End of brand logo wrapper  =======-->
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 @endsection
