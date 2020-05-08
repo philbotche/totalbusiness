@@ -21,6 +21,15 @@ class FrontController extends Controller
         return view('index', ['categorie'=>$categories, 'products'=>$products]);
     }
 
+    // All product inside database
+    public function products()
+    {
+        $product =new Product();
+        $products = $product::orderBy('id', 'desc')->get();
+
+        return view('products', ['products'=>$products]);
+    }
+
     // Page of the Categories
     public function category($slug)
     {

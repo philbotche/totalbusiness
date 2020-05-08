@@ -14,6 +14,7 @@
 // Home page Controller
 Route::get('/', 'FrontController@index');
 Route::get('/category/{slug}', 'FrontController@category')->name('cat');
+Route::get('/products', 'FrontController@products')->name('products');
 Route::get('/product/single/{sku}', 'FrontController@single_product')->name('single_product');
 
 Route::group(['prefix' => 'admin'], function () {
