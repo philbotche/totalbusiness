@@ -13,7 +13,7 @@
 
 // Home page Controller
 Route::get('/', 'FrontController@index');
-
+Route::get('/category/{slug}', 'FrontController@category')->name('cat');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
