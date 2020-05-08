@@ -16,7 +16,7 @@ class FrontController extends Controller
         $categories = Catalog::all();
         //take 15 products with their categories
         $product =new Product();
-        $products = $product::all();
+        $products = $product::orderBy('id', 'desc')->take(15)->get();
 
         return view('index', ['categorie'=>$categories, 'products'=>$products]);
     }
