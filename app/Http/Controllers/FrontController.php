@@ -30,4 +30,11 @@ class FrontController extends Controller
 
        return view('category', ['product_cat'=>$product_cat]);
     }
+
+    //Single product page,  skow by sku
+     public function single_product($sku)
+     {
+         $product = Product::where('sku', $sku)->first();
+         return view('single_product', ['product'=> $product]);
+     }
 }
